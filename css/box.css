@@ -218,9 +218,32 @@ body::selection{
     animation-delay: .8s;
 }
 
+
+.greetings > span:nth-child(6){
+    animation-delay: 1s;
+}
+
+.greetings > span:nth-child(7){
+    animation-delay: 1.2s;
+}
+
+.greetings > span:nth-child(8){
+    animation-delay: 1.4s;
+}
+
 .description{
     font-size: 1.3rem;
     margin-bottom: 20px;
+}
+
+
+.dedication{
+    margin: -6px 0 14px;
+    max-width: 56ch;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 241, 246, 0.95);
+    text-wrap: balance;
 }
 
 @media screen and (max-width:574px){
@@ -243,6 +266,11 @@ body::selection{
     }
     .description{
         font-size: 1rem;
+    }
+
+    .dedication{
+        font-size: .92rem;
+        margin: -2px 0 10px;
     }
     
     .button-group{
