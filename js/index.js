@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         image.src = randomGift;
     }
 
+    document.querySelectorAll('.memory-gallery img').forEach((photo) => {
+        photo.addEventListener('error', () => {
+            photo.style.display = 'none';
+        });
+    });
+
     buttons.forEach((button) => {
         button.addEventListener('mousemove', (e) => {
             const rect = button.getBoundingClientRect();
